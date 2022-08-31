@@ -96,6 +96,7 @@ footer {
     text-align: center;
     display: flex;
     flex-direction: column;
+    background-color: white;
 }
 
 .image {
@@ -187,18 +188,35 @@ header div img {
 .search {
     flex-basis: 50%;
     margin:auto;
+    background-color: white;
+    border-radius: 10px;
 }
 
 .search input {
     width: 80%;
+    font-size: 15px;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.search button{
+    background-color: white;
+    border: none;
+
+}
+.search i{
+    font-size: 25px;
 }
 
 .flex-container img, div, p {
     margin: auto;
 }
 
-form{
+.classform{
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 @media (min-width: 361px) {

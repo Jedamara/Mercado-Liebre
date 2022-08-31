@@ -24,8 +24,7 @@ rel="stylesheet" />
                         placeholder="Buscar productos, marcas"
                         name="search">
                     <button>
-                        <i class="fa fa-search"
-                            style="font-size: 10px;">
+                        <i class="fa fa-search">
                         </i>
                     </button>
                 </form>
@@ -54,66 +53,86 @@ rel="stylesheet" />
         </figure>
     </header>
     <main class="contenedor-registro">
-        <form action="/register" method="GET">
-        <div> 
+        <form class="form-registro" action="/register" method="GET">
+        <div class="inputs-register"> 
             <input placeholder="Nombre y Apellido" type="text" name="nombre-apellido" id="nombre-apellido">
         </div>
-        <div>  
+        <div class="inputs-register">  
             <input placeholder="Nombre de Usuari@" type="text" name="nombre-usuario" id="nombre-usuario">
         </div>
-        <div> 
+        <div class="inputs-register"> 
             <input placeholder="E-mail" type="email" name="email" id="email">
         </div>
-        <div>
-            <p>
+        <div class="inputs-register">
+            <p class="titulos">
                 <label for="fecha-nacimiento">Fecha de Nacimiento</label> 
+                <input type="date" name="fecha-nacimiento" id="fecha-nacimiento">
             </p> 
-            <input type="date" name="fecha-nacimiento" id="fecha-nacimiento">
         </div>
-        <div> 
+        <div class="inputs-register"> 
             <input placeholder="Domicilio" type="text" name="domicilio" id="domicilio">
         </div>
-        <div>
-            <p><label>Perfil del Usuario</label></p>
+        <div class="contenedor-radio-button">
+            <p class="titulos"><label>Perfil del Usuario</label></p>
+            <div class="userProfile">
+                <input type="radio" name="perfil-usuario" value="Comprador">
+                <label for="perfil-usuario">Comprador</label>
+                
+                <input type="radio" name="perfil-usuario" value="Vendedor">
+                <label for="mascota">Vendedor</label>
+            </div>
+        </div>
+        <div class="contenedor-checkbox-intereses">
+            <p class="titulos"><label>Intereses</label></p>
+            <div>
+                <input type="checkbox" name="intereses" value="Electro">
+                <label for="intereses">Electro</label>
+            </div>
 
-            <label for="perfil-usuario">Comprador</label>
-            <input type="radio" name="perfil-usuario" value="Comprador">
+            <div>
+                <input type="checkbox" name="intereses" value="Moda">
+                <label for="intereses">Moda</label>
+            </div>
 
-            <label for="mascota">Vendedor</label>
-            <input type="radio" name="perfil-usuario" value="Vendedor">
+            <div>
+                <input type="checkbox" name="intereses" value="Hogar">
+                <label for="intereses">Hogar</label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="intereses" value="Juguetería">
+                <label for="intereses">Juguetería</label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="intereses" value="Vida Sana">   
+                <label for="intereses">Vida Sana</label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="intereses" value="Juguetería">
+                <label for="intereses">Juguetería</label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="intereses" value="Vida Sana">   
+                <label for="intereses">Vida Sana</label>
+            </div>
         </div>
         <div>
-            <p><label>Intereses</label></p>
-        
-            <label for="intereses">Electro</label>
-            <input type="checkbox" name="intereses" value="Electro">
-
-            <label for="intereses">Moda</label>
-            <input type="checkbox" name="intereses" value="Moda">
-
-            <label for="intereses">Hogar</label>
-            <input type="checkbox" name="intereses" value="Hogar">
-
-            <label for="intereses">Juguetería</label>
-            <input type="checkbox" name="intereses" value="Juguetería">
-
-            <label for="intereses">Vida Sana</label>
-            <input type="checkbox" name="intereses" value="Vida Sana">   
-        </div>
-        <div>
-            <p><label>Elegí tu foto de Usuario</label></p>
+            <p class="titulos"><label>Elegí tu foto de Usuario</label></p>
             <input type="file" name="foto-usuario" accept=".jpg" multiple>
         </div>
-        <div>  
+        <div class="inputs-register">  
             <input placeholder="Contraseña" type="password" name="contraseña" id="contraseña">
         </div>
-        <div> 
+        <div class="inputs-register"> 
             <input placeholder="Confirmá tu contraseña" type="password" name="contraseña" id="contraseña">
         </div>
         <div>
-            <p><button type="submit" >Enviar</button></p>
+            <p><button class="button" type="submit" >Enviar</button></p>
 
-            <p><button type="reset" >Borrar</button></p>
+            <p><button class="button reset" type="reset" >Borrar</button></p>
         </div> 
         </form>
     </main>
