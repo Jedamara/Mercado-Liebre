@@ -25,3 +25,7 @@
     padding: 10px;
     font-size: 19px;
 }
+
+.formLogin button:hover{
+    background-color: #0022AA;
+}

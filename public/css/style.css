@@ -93,10 +93,15 @@ a {
 }
 
 footer {
+    margin-top: 50px;
     text-align: center;
     display: flex;
     flex-direction: column;
     background-color: white;
+}
+
+.icon_footer:hover{
+    color: rgb(100, 193, 247);
 }
 
 .image {
@@ -125,6 +130,10 @@ article {
     flex-basis: 100%;
 }
 
+article:hover {
+    box-shadow: 0px 0px 15px rgb(100 100 100);
+}
+
 .contenedor-detalles-de-precio{
     border-top: 1px solid #ebebeb;
     background-color: white;
@@ -138,6 +147,16 @@ article {
 .contenedor-detalles-de-precio i{
     color: green;
     font-size: 20px;
+}
+
+.contenedor-detalles-de-precio i:hover{
+    transform: rotate(-90deg);
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+.contenedor-detalles-de-precio:hover .descripciones{
+    display: block;
 }
 
 .text--center{
@@ -220,9 +239,8 @@ header div img {
 }
 
 @media (min-width: 361px) {
-
     .descripciones{
-        display: block;
+        display: none;
     }
     .main-navbar{
         display: flex;
@@ -260,7 +278,7 @@ header div img {
 
 @media (min-width: 769px) {
     .descripciones{
-        display: block;
+        display: none;
     }
     .main-navbar{
         margin-top: 40px;
