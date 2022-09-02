@@ -2,7 +2,11 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    }
+}
+
+*:focus {
+    outline: none;
+}
 
 html {
     font-size: 10px;
@@ -24,6 +28,7 @@ body {
 h3 {
     font-size: 24px;
     color: #666;
+    margin: 25px auto;;
 }
 
 .precios {
@@ -146,7 +151,7 @@ article:hover {
 
 .contenedor-detalles-de-precio i{
     color: green;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .contenedor-detalles-de-precio i:hover{
